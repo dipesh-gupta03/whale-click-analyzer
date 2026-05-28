@@ -1,4 +1,4 @@
-# 🐋 Sperm Whale Click Analyzer
+#  Sperm Whale Click Analyzer
 
 A bioacoustic analysis tool for detecting, visualizing, and clustering sperm whale click patterns from hydrophone recordings — built to contribute to the broader effort of understanding cetacean communication.
 
