@@ -27,20 +27,14 @@ Inspired by [Project CETI](https://www.projectceti.org/) and the Watkins Marine 
 
 ```
 whale_analyzer/
-├── .venv/                  # Virtual environment
-├── data/                   # Raw audio files (.wav)
-│   └── README.md           # Data sources and attribution
-├── notebooks/
-│   ├── 01_exploration.ipynb        # Load and visualize raw audio
-│   ├── 02_preprocessing.ipynb      # Noise reduction and cleaning
-│   ├── 03_click_detection.ipynb    # Detecting individual clicks
-│   └── 04_pattern_analysis.ipynb   # ICI analysis and clustering
-├── src/
-│   ├── loader.py           # Audio loading utilities
-│   ├── preprocessing.py    # Noise reduction functions
-│   ├── detection.py        # Click detection algorithms
-│   └── visualization.py    # Plotting and spectrogram helpers
-├── requirements.txt
+├── .venv/                      # Virtual environment
+├── data/                       # Audio recordings (.wav)
+│   ├── audio_1.wav             # 17.8s — 108 clicks
+│   ├── audio_2.wav             # 10.0s — 40 clicks
+│   └── audio_3.wav             # 44.0s — 128 clicks
+├── whale_clicks.ipynb          # Spectrogram visualization
+├── whale_exploration.ipynb     # Click detection & ICI analysis
+├── .gitignore
 └── README.md
 ```
 
@@ -97,17 +91,18 @@ All recordings used for research and educational purposes only.
 
 ## Current Progress
 
-- [x] Environment setup
-- [x] Audio loading and playback in Jupyter
-- [x] Waveform visualization
-- [x] Basic noise reduction
-- [ ] Spectrogram generation
-- [ ] Automated click detection
-- [ ] Inter-click interval (ICI) measurement
-- [ ] Unsupervised clustering of coda patterns
-- [ ] Comparison across multiple recordings
+- ## Current Progress
 
----
+- [x] Environment setup
+- [x] Audio loading and playback
+- [x] Waveform visualization
+- [x] Noise reduction
+- [x] Spectrogram generation
+- [x] Automated click detection (276 clicks across 3 files)
+- [x] Inter-click interval (ICI) measurement
+- [x] ICI distribution comparison across recordings
+- [ ] Unsupervised clustering of click patterns
+- [ ] Feature extraction per click
 
 ## Background
 
